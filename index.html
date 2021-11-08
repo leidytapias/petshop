@@ -5,49 +5,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
     <title>Petshop</title>
 </head>
 
 <body>
     <header>
-        <div>
+        <div class="fondo">
             <p>Grandes ofertas en comederos</p>
+
             <nav>
-                <ul>
-                    <li>
+                <ul class="menu-configuracion">
+                    <li class="menu-items">
                         <span>Español</span><img src="images/vector1.svg" alt="flecha" />
                     </li>
-                    <li>
+                    <li class="menu-items">
                         <span>ARG$</span><img src="images/vector1.svg" alt="flecha" />
                     </li>
                 </ul>
             </nav>
         </div>
-        <div>
-            <img src="images/logo1.svg" alt="logo blanco" />
+        <div class="caja">
+            <img class="logo-principal" src="images/logo1.svg" alt="logo blanco" />
             <nav>
-                <ul>
-                    <li>
+                <ul class="menu-principal">
+                    <li class="menu-items-principal">
                         <a href="#">
-                            <img src="images/pawprint-white.svg" alt="huella blanca" />
+                            <i class="fas fa-paw"></i>
                             Categoría
                         </a>
                     </li>
-                    <li>
+                    <li class="menu-items-principal">
                         <a href="#">
-                            <img src="images/pawprint-white.svg" alt="huella blanca" />
+                            <i class="fas fa-paw"></i>
                             Pets
                         </a>
                     </li>
-                    <li>
+                    <li class="menu-items-principal">
                         <a href="#">
-                            <img src="images/pawprint-white.svg" alt="huella blanca" />
+                            <i class="fas fa-paw"></i>
                             Nosotros
                         </a>
                     </li>
-                    <li>
+                    <li class="menu-items-principal">
                         <a href="#">
-                            <img src="images/pawprint-white.svg" alt="huella blanca" />
+                            <i class="fas fa-paw"></i>
                             Contáctanos
                         </a>
                     </li>
@@ -58,33 +64,33 @@
         
     </header>
     <main>
-        <section>
-            <img src="images/bowl-and-pet-daities-on-green-background.png" alt="logo banner" />
-            <div>¡Un placer tenerte aquí! </div>
-            <div>¡Comederos en descuento!</div>
+        <section class="banner">
+            <div class="alinear relleno">¡Un placer tenerte aquí! </div>
+            <div class="alinear">¡Comederos en descuento!</div>
             <button>COMEDEROS</button>
         </section>
-       
+
+         
         <section>
-            <img src="images/pawprint-orange.svg" alt="huella orange" />
+            <i class="far fa-paw"></i>
             <h1>Productos Destacados</h1>
-            <div>
+            <div class="comederos-accesorios-comidas">
                 <span>Comederos</span>
                 <span>- Accesorios</span>
                 <span>- Comidas</span>
             </div>
             <div>
-                <article>
+                <article class="between">
                     <img src="images/churrasquito.png" alt="Juguete" />
                     <p>Juguete Churrasquito</p>
                     <p>$150</p>
                 </article>
-                <article>
+                <article class="between">
                     <img src="images/comedero.png" alt="Comedero" />
                     <p>Comedero para perros</p>
                     <p>$250</p>
                 </article>
-                <article>
+                <article class="between">
                     <img src="images/huesito.png" alt="Huesito" />
                     <p>Juguete Huesito</p>
                     <p>$650</p>
@@ -108,8 +114,8 @@
                     <input type="submit" value="Enviar">
             </form>
         </section>
-        <section>
-               <span>
+        <section class="suscribase">
+               <span >
                     <img src="images/enviar-correo.svg" alt="icono de carta" />
                     <p>Suscríbete para más novedades</p>
                </span> 
@@ -141,9 +147,13 @@
             </div>
         </section>
         <img src="images/logo2.svg" alt="logo" />
-        <div>
-            Todos los derechos reservados FrontEnd
+        <div class="redes-sociales">
+            <a href="https://www.facebook.com/leidytapias"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/leidyyulianatapias"><i class="fab fa-instagram"></i></a>
         </div> 
+        <div class="final-footer">
+        <p>Todos los derechos reservados FrontEnd</p>
+         </div>    
     </footer>
 </body>
 
