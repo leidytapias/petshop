@@ -22,23 +22,35 @@
 
   <body>
     <header>
-      <div class="fondo">
+      <div
+        class="
+          display-flex-row
+          justify-content-between
+          contenedor-menu-configuracion
+        "
+      >
         <p>Grandes ofertas en comederos</p>
         <nav>
-          <ul class="menu-configuracion">
-            <li class="menu-items">
+          <ul class="display-flex-row">
+            <li class="display-flex-row justify-content-between menu-items">
               <span>Español</span><img src="images/vector1.svg" alt="flecha" />
             </li>
-            <li class="menu-items">
+            <li class="display-flex-row justify-content-between menu-items">
               <span>ARG$</span><img src="images/vector1.svg" alt="flecha" />
             </li>
           </ul>
         </nav>
       </div>
-      <div class="caja">
+      <div
+        class="
+          display-flex-row
+          justify-content-between
+          contenedor-menu-principal
+        "
+      >
         <img class="logo-principal" src="images/logo1.svg" alt="logo blanco" />
         <nav>
-          <ul class="menu-principal">
+          <ul class="display-flex-row justify-content-between menu-principal">
             <li class="menu-items-principal">
               <a href="#">
                 <i class="fas fa-paw"></i>
@@ -68,99 +80,170 @@
       </div>
     </header>
     <main>
-      <section class="banner">
-        <div class="alinear relleno">¡Un placer tenerte aquí!</div>
-        <div class="alinear">¡Comederos en descuento!</div>
-        <button>COMEDEROS</button>
+      <section
+        class="
+          display-flex-column
+          justify-content-center
+          align-items-end
+          banner
+        "
+      >
+        <div class="justify-content-end display-flex-column relleno">
+          ¡Un placer tenerte aquí!
+        </div>
+        <div class="display-flex-column justify-content-end">
+          ¡Comederos en descuento!
+        </div>
+        <button class="color-comedero">COMEDEROS</button>
       </section>
 
       <section>
-        <div class="contenedor-encabezado-main">
-          <i class="fas fa-paw naranja"></i>
+        <div
+          class="display-flex-column align-items-center justify-content-between"
+        >
+          <i class="fas fa-paw huella-principal"></i>
           <h1>Productos Destacados</h1>
-          <div class="comederos-accesorios-comidas">
+          <div class="display-flex-row justify-content-center">
             <span>Comederos</span>
             <span>- Accesorios</span>
             <span>- Comidas</span>
           </div>
         </div>
-        <div class="contenedor-productos">
-          <article class="contenedor-productos2">
-            <img src="images/churrasquito.png" alt="Juguete" />
-            <p>Juguete Churrasquito</p>
-            <p class="nombres-accesorios">$150</p>
+        <div
+          class="
+            justify-content-around
+            align-items-center
+            display-flex-row
+            flex-wrap
+            contenedor-productos
+          "
+        >
+          <article class="display-flex-column align-items-center articulo">
+            <img src="images/churrasquito.png" alt="Churrasquito" />
+            <div class="display-flex-column align-items-center color-accesorio">
+              <p>Juguete Churrasquito</p>
+              <p class="nombres-accesorios">$150</p>
+            </div>
           </article>
-          <article class="contenedor-productos2">
+          <article class="display-flex-column align-items-center articulo">
             <img src="images/comedero.png" alt="Comedero" />
-            <p>Comedero para perros</p>
-            <p class="nombres-accesorios">$250</p>
+            <div class="display-flex-column align-items-center color-accesorio">
+              <p>Comedero para perros</p>
+              <p class="nombres-accesorios">$250</p>
+            </div>
           </article>
-          <article class="contenedor-productos2">
+          <article class="display-flex-column align-items-center articulo">
             <img src="images/huesito.png" alt="Huesito" />
-            <p>Juguete Huesito</p>
-            <p class="nombres-accesorios">$650</p>
+            <div class="display-flex-column align-items-center color-accesorio">
+              <p>Juguete Huesito</p>
+              <p class="nombres-accesorios">$650</p>
+            </div>
           </article>
         </div>
-        <form class="formulario" action="#">
+        <form
+          class="display-flex-column align-items-center justify-content-center"
+          action="#"
+        >
           <h2>Contáctanos</h2>
           <div>
-        
-            <input class="input-formulario" type="text" name="nombre" placeholder="Nombre y Apellido" />
+            <input
+              class="
+                display-flex-column
+                justify-content-center
+                input-formulario
+              "
+              type="text"
+              name="nombre"
+              placeholder="Nombre y Apellido:"
+            />
           </div>
           <div>
-            <input class="input-formulario" type="email" name="email"placeholder="Ingresá tu correo electrónico:" />
+            <input
+              class="
+                display-flex-column
+                justify-content-center
+                input-formulario
+              "
+              type="email"
+              name="email"
+              placeholder="Ingresá tu correo electrónico:"
+            />
           </div>
-          <div>
-            <input class="input-formulario" type="number" name="telefono"placeholder="Teléfono:" />
+          <input
+            class="display-flex-column justify-content-center input-formulario"
+            type="number"
+            name="telefono"
+            placeholder="Teléfono:"
+          />
+          <div class="botones display-flex-row">
+            <button class="display-flex-row justify-content-center boton color">
+              Resetear
+            </button>
+            <button class="boton">Enviar</button>
           </div>
-          <button class="boton">Resetear</button>
-          <button class="boton">Enviar</button>
         </form>
       </section>
-      <section class="suscribase">
-        <span>
-          <img src="images/enviar-correo.svg" alt="icono de carta" />
+      <section
+        class="suscribase flex-wrap justify-content-between display-flex-row"
+      >
+        <span class="display-flex-row align-items-center">
+          <img
+            class="imagen-carta display-flex-row align-items-center"
+            src="images/enviar-correo.svg"
+            alt="icono de carta"
+          />
           <p>Suscríbete para más novedades</p>
         </span>
-        <form action="#">
-          <label for=""> Email: </label>
+        <form class="display-flex-row align-items-center" action="#">
           <input
+            class="input-correo"
             type="Correo electronico"
             name="Ingresa tu Correo Electronico"
+            placeholder="Ingresa tu Correo Electronico"
           />
-          <input type="submit" value="Suscribirme" />
+          <button class="boton-suscripcion">suscribirme</button>
         </form>
       </section>
     </main>
     <footer>
-      <section>
+      <section class="display-flex-row justify-content-between">
         <div>
-          <img src="images/location.svg" alt="icono de ubicacion" />
-          <h3>Localidad</h3>
-          <p>Calle - provincia</p>
+          <div class="iconos-footer display-flex-row">
+            <div class="contenedor-imagen-footer">
+              <img src="images/location.svg" alt="icono de ubicacion" />
+            </div>
+            <div>
+              <h3>Localidad</h3>
+              <span class="parrafo-footer">Calle - provincia</span>
+            </div>
+          </div>
+          <div class="iconos-footer display-flex-row">
+            <div class="contenedor-imagen-footer">
+              <img src="images/phone-call.svg" alt="icono de Telefono" />
+            </div>
+            <div>
+              <h3>Teléfono</h3>
+              <span  class="parrafo-footer">Número telefónico</span>
+            </div>
+          </div>
+          <div class="iconos-footer display-flex-row">
+            <div class="contenedor-imagen-footer">
+              <img src="images/correo-electronico.svg" alt="icono de correo" />
+            </div>
+            <div>
+              <h3>Correo electrónico</h3>
+              <span class="parrafo-footer">Dirección de correo</span>
+            </div>
+          </div>
         </div>
-        <div>
-          <img src="images/phone-call.svg" alt="icono de Telefono" />
-          <h3>Teléfono</h3>
-          <p>Número de télefono</p>
-        </div>
-        <div>
-          <img src="images/correo-electronico.svg" alt="icono de correo" />
-          <h3>Correo electrónico</h3>
-          <p>Dirección de correo</p>
-        </div>
+        <img class="imagen-footer" src="images/logo2.svg" alt="logo" />
       </section>
-      <img src="images/logo2.svg" alt="logo" />
-      <div class="redes-sociales">
-        <a href="https://www.facebook.com/leidytapias"
-          ><i class="fab fa-facebook"></i
-        ></a>
-        <a href="https://www.instagram.com/leidyyulianatapias"
-          ><i class="fab fa-instagram"></i
-        ></a>
-      </div>
+
       <div class="final-footer">
-        <p>Todos los derechos reservados FrontEnd</p>
+        <i class="fab fa-facebook"></i>
+        <i class="fab fa-instagram"></i>
+        
+        <p>Todos los derechos reservados Frontend</p>
       </div>
     </footer>
   </body>

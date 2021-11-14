@@ -1,35 +1,53 @@
 * {
-  font-family: "open sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+
 }
-.fondo {
-  background: #222222;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-}
-.menu-configuracion {
+.display-flex-row {
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
-  justify-content: start;
 }
+.display-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+.justify-content-center {
+  justify-content: center;
+}
+.justify-content-between {
+  justify-content: space-between;
+}
+.justify-content-around {
+  justify-content: space-around;}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+.align-items-center {
+  align-items: center;
+}
+.align-items-end {
+  align-items: flex-end;
+}
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.contenedor-menu-configuracion {
+  background: #222222;
+  color: white;
+}
+
 .menu-items {
   list-style: none;
   font-size: 15px;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
 }
 .logo-principal {
   height: 23px;
 }
 .menu-principal {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: row;
   list-style: none;
 }
 .menu-items-principal > a {
@@ -40,68 +58,49 @@
   background-image: url("../images/bowl-and-pet-daities-on-green-background.png");
   background-repeat: no-repeat;
   height: 410px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-end;
   background-size: cover;
   padding-right: 16px;
 }
-.comederos-accesorios-comidas {
-  display: flex;
-  justify-content: center;
+.color-comedero{
+  background-color:#f0a83e;
+  border-radius: 8px;
+  border:none;
+  margin:12px;
+  padding:12px;
+  color:#fff;
 }
-
-.caja {
+.contenedor-menu-principal {
   background-color: #f0a83e;
-  display: flex;
-  justify-content: space-between;
   font-size: 10px;
 }
 .fa-paw {
   color: white;
 }
-.naranja {
+.huella-principal {
   color: #f0a83e;
   font-size: 72px;
-}
-
-.contenedor-encabezado-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 }
 .comederos-accesorios-comidas > span {
   margin: 15px;
   padding: 20px;
 }
+.articulo{
+  margin: 8px;
+}
 .contenedor-productos {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   padding: 15px;
   margin: 20px;
 }
-.contenedor-productos2 {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
+
+.color-accesorio{
+  background-color: #fafaf6;
+  width: 100%;
 }
 .nombres-accesorios {
   color: #f0a83e;
 }
-h2 {
-  text-align: center;
-}
 .fa-instagram {
   color: black;
-}
-.alinear {
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
 }
 .relleno {
   background-color: white;
@@ -109,74 +108,95 @@ h2 {
   margin: 5px;
   padding: 5px;
 }
-button {
-  background-color: #f0a83e;
-  color: white;
-  margin: 5px;
-  padding: 5px;
-  border-radius: 5px;
-  border: solid 1px#F0A83E;
-}
-.boton {
-  background-color: gray;
-  padding: 5px;
-  margin: 15px;
-}
-.far {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
-  background-repeat: no-repeat;
-  height: 16px;
-  background-size: 8px;
-}
-
 h1 {
   text-align: center;
   font-weight: bold;
 }
-span {
-  display: flex;
-  justify-content: space-between;
+.boton {
+  background-color: #f0a83e;
+  color: white;
+  margin: 5px;
+  padding: 4px 12px;
+  border-radius: 15px;
+  border: solid 1px#F0A83E;
 }
-article > img {
-  display: flex;
-  justify-content: space-between;
-}
-.formulario {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-
+.color {
+  background-color: #848787;
+  margin: 5px;
+  border:none
 }
 
 .input-formulario {
-  padding: 4px;
-  margin: 2px;
-  border: solid 1px #3c2313;
-  border-radius: 4px;
+  padding: 15px;
+  margin: 12px;
+  width: 340px;
+  border: solid 5px #3c2313;
+  border-radius: 12px;
   background-color: #3c2313;
-  color:#fff;
-}
+  color: #fff;
 
+}
+.imagen-carta{
+  padding:8px;
+  margin: 8px;
+}
+.input-formulario::placeholder{
+  color: #fff;
+  font-size: 9px;
+}
+.boton-suscripcion{
+  padding: 12px;
+  margin:8px;
+  color:#fff;
+  background-color:#3c2313;
+  border-radius: 12px;
+  border:none;
+  font-size: 9px;
+}
+.input-correo{
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 12px;
+  margin:8px;
+  border:none;
+  font-size:9px;
+  width: 270px;
+}
 .suscribase {
   background-color: #f0a83e;
-  display: flex;
-  justify-content: space-between;
-  font-size: 10px;
+  font-size: 20px;
+  color: #fff;
+ 
+}
+.iconos-footer {
+  padding: 16px;
+   
+}
+h3{
+  font-weight: bold;
+}
+.contenedor-imagen-footer{
+  border-radius: 50px;
+  background-color: #848787;
+  padding: 15px;
 }
 footer {
   background-color: #3c2313;
-  color:#fff;
-
+  color: #fff;
 }
-.redes-sociales {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+.imagen-footer{
+  padding: 15px;
+  margin:12px
+}
+.parrafo-footer{
+  font-size: 10px;
+  padding: 8px;
 }
 .final-footer {
-  background-color: #f0a83e;
+  background-color: #000;
   text-align: center;
+
+}
+.fab{
+  color:#f0a83e;
 }
