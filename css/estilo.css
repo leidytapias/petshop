@@ -66,11 +66,14 @@
   background-size: cover;
   padding-right: 16px;
 }
+.comederos{
+  margin:12px;
+}
 .color-comedero{
   background-color:#f0a83e;
   border-radius: 8px;
   border:none;
-  margin:12px;
+  cursor:pointer;
   padding:12px;
   color:#fff;
 }
@@ -218,4 +221,5 @@ footer {
 }
 .fab{
   color:#f0a83e;
+  text-decoration: none;
 }
