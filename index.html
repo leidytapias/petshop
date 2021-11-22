@@ -42,17 +42,11 @@
           </ul>
         </nav>
       </div>
-      <div
-        class="
-          display-flex-row
-          justify-content-between
-          contenedor-menu-principal
-          align-items-center
-        "
-      >
+
+      <div id="contenedor-menu-principal" class="contenedor-menu-principal">
         <img class="logo-principal" src="images/logo1.svg" alt="logo blanco" />
         <nav>
-          <ul class="display-flex-row justify-content-between menu-principal">
+          <ul class="menu-principal display-flex-row justify-content-between">
             <li class="menu-items-principal">
               <a href="#">
                 <i class="fas fa-paw"></i>
@@ -79,6 +73,13 @@
             </li>
           </ul>
         </nav>
+        <a
+          href="javascript:void(0);"
+          class="boton-manipular-menu"
+          onclick="myFunction()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
       </div>
     </header>
     <main>
@@ -96,7 +97,9 @@
         <div class="display-flex-column justify-content-end">
           ¡Comederos en descuento!
         </div>
-        <a class="comederos"href="construccion.html"target="_blank"><button class="color-comedero">COMEDEROS</button></a>
+        <a class="comederos" href="construccion.html" target="_blank"
+          ><button class="color-comedero">COMEDEROS</button></a
+        >
       </section>
 
       <section>
@@ -105,7 +108,14 @@
         >
           <i class="fas fa-paw huella-principal"></i>
           <h1>Productos Destacados</h1>
-          <div class="display-flex-row justify-content-center comederos-accesorios-comidas">
+          <div
+            class="
+              display-flex-row
+              justify-content-center
+              comederos-accesorios-comidas
+              flex-wrap
+            "
+          >
             <span>Comederos</span>
             <span>- Accesorios</span>
             <span>- Comidas</span>
@@ -196,7 +206,7 @@
           />
           <p>Suscríbete para más novedades</p>
         </span>
-        <form class="display-flex-row align-items-center" action="#">
+        <form class="display-flex-row align-items-center flex-wrap" action="#">
           <input
             class="input-correo"
             type="Correo electronico"
@@ -208,7 +218,14 @@
       </section>
     </main>
     <footer>
-      <section class="display-flex-row justify-content-between">
+      <section
+        class="
+          contenedor-footer
+          display-flex-row
+          justify-content-between
+          flex-wrap
+        "
+      >
         <div>
           <div class="iconos-footer display-flex-row">
             <div class="contenedor-imagen-footer">
@@ -225,7 +242,7 @@
             </div>
             <div>
               <h3>Teléfono</h3>
-              <span  class="parrafo-footer">Número telefónico</span>
+              <span class="parrafo-footer">Número telefónico</span>
             </div>
           </div>
           <div class="iconos-footer display-flex-row">
@@ -242,11 +259,16 @@
       </section>
 
       <div class="final-footer">
-        <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-        <a href="https://www.instagram.com/?hl=es" ><i class="fab fa-instagram"></i></a>
-        
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fab fa-facebook"></i
+        ></a>
+        <a href="https://www.instagram.com/?hl=es"
+          ><i class="fab fa-instagram"></i
+        ></a>
+
         <p>Todos los derechos reservados Frontend</p>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
   </body>
 </html>

@@ -3,7 +3,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
 }
 .display-flex-row {
   display: flex;
@@ -20,7 +19,8 @@
   justify-content: space-between;
 }
 .justify-content-around {
-  justify-content: space-around;}
+  justify-content: space-around;
+}
 
 .justify-content-end {
   justify-content: flex-end;
@@ -31,11 +31,12 @@
 .align-items-end {
   align-items: flex-end;
 }
-.flex-wrap{
+.flex-wrap {
   flex-wrap: wrap;
 }
-.menu-encabezado>li{
-  margin:8px;
+
+.menu-encabezado > li {
+  margin: 8px;
   font-size: 9px;
 }
 
@@ -57,7 +58,7 @@
 .menu-items-principal > a {
   text-decoration: none;
   color: white;
-  margin:4px
+  margin: 4px;
 }
 .banner {
   background-image: url("../images/bowl-and-pet-daities-on-green-background.png");
@@ -66,18 +67,21 @@
   background-size: cover;
   padding-right: 16px;
 }
-.comederos{
-  margin:12px;
+.comederos {
+  margin: 12px;
 }
-.color-comedero{
-  background-color:#f0a83e;
+.color-comedero {
+  background-color: #f0a83e;
   border-radius: 8px;
-  border:none;
-  cursor:pointer;
-  padding:12px;
-  color:#fff;
+  border: none;
+  cursor: pointer;
+  padding: 12px;
+  color: #fff;
 }
 .contenedor-menu-principal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #f0a83e;
   font-size: 10px;
   padding: 0 16px;
@@ -89,27 +93,23 @@
   color: #f0a83e;
   font-size: 72px;
   margin-top: 25px;
-
 }
 .comederos-accesorios-comidas > span {
   margin: 15px;
   padding: 8px;
-  
-
 }
-.comederos-accesorios-comidas{
+.comederos-accesorios-comidas {
   margin-top: 8px;
 }
-.articulo{
+.articulo {
   margin: 8px;
- 
 }
 .contenedor-productos {
   padding: 15px;
   margin: 20px;
 }
 
-.color-accesorio{
+.color-accesorio {
   background-color: #fafaf6;
   width: 100%;
 }
@@ -136,16 +136,15 @@ h1 {
   padding: 4px 12px;
   border-radius: 15px;
   border: solid 1px#F0A83E;
-  
 }
-.botones{
+.botones {
   margin-bottom: 75px;
   margin-top: 40px;
 }
 .color {
   background-color: #848787;
   margin: 5px;
-  border:none
+  border: none;
 }
 
 .input-formulario {
@@ -156,48 +155,45 @@ h1 {
   border-radius: 12px;
   background-color: #3c2313;
   color: #fff;
-
 }
-.imagen-carta{
-  padding:8px;
+.imagen-carta {
+  padding: 8px;
   margin: 8px;
 }
-.input-formulario::placeholder{
+.input-formulario::placeholder {
   color: #fff;
   font-size: 9px;
 }
-.boton-suscripcion{
+.boton-suscripcion {
   padding: 12px;
-  margin:8px;
-  color:#fff;
-  background-color:#3c2313;
+  margin: 8px;
+  color: #fff;
+  background-color: #3c2313;
   border-radius: 12px;
-  border:none;
+  border: none;
   font-size: 9px;
 }
-.input-correo{
+.input-correo {
   background-color: #fff;
   border-radius: 12px;
   padding: 12px;
-  margin:8px;
-  border:none;
-  font-size:9px;
+  margin: 8px;
+  border: none;
+  font-size: 9px;
   width: 270px;
 }
 .suscribase {
   background-color: #f0a83e;
   font-size: 20px;
   color: #fff;
- 
 }
 .iconos-footer {
   padding: 16px;
-   
 }
-h3{
+h3 {
   font-weight: bold;
 }
-.contenedor-imagen-footer{
+.contenedor-imagen-footer {
   border-radius: 50px;
   background-color: #848787;
   padding: 15px;
@@ -206,20 +202,57 @@ footer {
   background-color: #3c2313;
   color: #fff;
 }
-.imagen-footer{
+
+.imagen-footer {
   padding: 15px;
-  margin:12px
+  margin: 12px;
 }
-.parrafo-footer{
+.parrafo-footer {
   font-size: 10px;
   padding: 8px;
 }
 .final-footer {
   background-color: #000;
   text-align: center;
-
 }
-.fab{
-  color:#f0a83e;
+.fab {
+  color: #f0a83e;
   text-decoration: none;
+}
+
+.boton-manipular-menu {
+  display: none;
+  color: #fff;
+  font-size: 28px;
+}
+
+@media (max-width: 414px) {
+  .menu-principal {
+    display: none;
+  }
+  .boton-manipular-menu {
+    display: block;
+  }
+  .imagen-footer {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .contenedor-footer {
+    justify-content: center;
+  }
+  .contenedor-menu-configuracion {
+    display: none;
+  }
+  .contenedor-menu-principal.responsive {
+    position: relative;
+    padding-bottom: 12px;
+  }
+  .contenedor-menu-principal.responsive .menu-principal {
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
 }
