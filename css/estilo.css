@@ -83,7 +83,7 @@
   justify-content: space-between;
   align-items: center;
   background-color: #f0a83e;
-  font-size: 10px;
+  font-size: 12px;
   padding: 0 16px;
 }
 .fa-paw {
@@ -171,7 +171,7 @@ h1 {
   background-color: #3c2313;
   border-radius: 12px;
   border: none;
-  font-size: 9px;
+  font-size: 12px;
 }
 .input-correo {
   background-color: #fff;
@@ -179,7 +179,7 @@ h1 {
   padding: 12px;
   margin: 8px;
   border: none;
-  font-size: 9px;
+  font-size: 12px;
   width: 270px;
 }
 .suscribase {
@@ -208,7 +208,7 @@ footer {
   margin: 12px;
 }
 .parrafo-footer {
-  font-size: 10px;
+  font-size: 12px;
   padding: 8px;
 }
 .final-footer {

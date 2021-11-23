@@ -6,14 +6,35 @@
     box-sizing: border-box;
 }
 header{
-    background-color: turquoise;
-    text-align: center;
+    background-color:#000;
+    color: #fff;
+    
 }
-main{
-    text-align: center;
+h1 {
+    display: flex;
+    justify-content: center;
+
+
+
 }
 footer{
     background-color: turquoise;
     text-align: center;
 }
+.menu{
+    background-color: #F0A83E;
+    border-radius: 5px;
+    color:#fff;
+    display: flex;
+    justify-content: flex-end;
+    border:none;
+    padding: 5px;
+    margin-top: 5px;
+}
+a {
+    text-decoration: none;
+    
+}
+
+
 
